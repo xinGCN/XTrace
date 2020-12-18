@@ -1,0 +1,18 @@
+{
+  "name": "xtrace",
+  "version": "1.0.0",
+  "description": "Trace Java or OBJC methods with options that show method entry, return value, print stack, and method execution time.Base on frida.",
+  "main": "agent/sensorsdata.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "frida-compile agent/sensorsdata.ts -o _agent.js",
+    "watch": "frida-compile agent/sensorsdata.ts -o _agent.js -w"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^16.1.0",
+    "@types/node": "^14.0.14",
+    "frida-compile": "^9.3.0"
+  },
+  "author": "Xin Gu",
+  "license": "ISC"
+}
